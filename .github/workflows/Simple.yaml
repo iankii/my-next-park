@@ -42,5 +42,5 @@ jobs:
     needs: [lintTest, securityCheck]
     steps:
       - name: Intsall Dependencies
-          run: |
-            echo "Deploying..."
+        run: |
+          echo "Deploying..."
