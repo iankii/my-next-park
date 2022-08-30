@@ -6,7 +6,6 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home({ parks }) {
-  console.log("parks", parks)
   const [isLoading, setIsLoading] = useState(true);
   const [parkIndex, setParkIndex] = useState(1);
   const [selected, setSelected] = useState({

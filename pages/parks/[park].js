@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 function Park({ park }) {
     const parkData = park.data[0];
-    console.log("🚀 ~ file: [park].js ~ line 9 ~ Park ~ parkData", parkData)
     return (<div>
         {/* <Head>
             <title>My Park Data</title>
@@ -47,7 +46,7 @@ function Park({ park }) {
 
 export const getStaticPaths = async () => {
     const res = await axios.get(`https://developer.nps.gov/api/v1/parks?limit=10&api_key=${process.env.PARKS_API_KEY}`);
-    console.log("🚀 ~ file: [park].js ~ line 50 ~ getStaticPaths ~ res", res)
+
     const parks = res.data;
 
     const paths = parks.data.map((park) => {
