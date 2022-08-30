@@ -81,7 +81,8 @@ export default function Home({ parks }) {
 
 export const getStaticProps = async () => {
   // 7hdKbKKAHL4liByqDtfoN93KpWGb0T7ClRwGagdJ
-  const res = await axios.get(`https://developer.nps.gov/api/v1/parks?limit=500&api_key=${process.env.PARKS_API_KEY}`);
+  // TODO: move token to env
+  const res = await axios.get(`https://developer.nps.gov/api/v1/parks?limit=500&api_key=7hdKbKKAHL4liByqDtfoN93KpWGb0T7ClRwGagdJ`);
   const parks = res.data;
 
   return {
