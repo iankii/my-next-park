@@ -68,7 +68,7 @@ export default function Home({ parks }) {
                 }
               })}</select>
               <Link href={`/parks/${selected.parkCode}`}>
-                <button>Lets Go!!!</button>
+                <button>Lets Go!!!!!!</button>
               </Link>
             </div>
           </div>
